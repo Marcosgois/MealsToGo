@@ -5,6 +5,8 @@ import { Searchbar } from "react-native-paper";
 import { SafeAreaView } from "react-native";
 
 import { RestaurantInfoCard } from "../components/restaurant-info-card";
+import { space } from "../../../infrastructure/theme/spacing";
+import { colors } from "../../../infrastructure/theme/colors";
 
 export const RestaurantsScreen = () => (
   <SafeAreaView style={styles.container}>
@@ -23,11 +25,11 @@ const styles = StyleSheet.create({
     marginTop: StatusBar.currentHeight,
   },
   search: {
-    padding: 16,
+    padding: space.md,
   },
   list: {
     flex: 1,
-    padding: 16,
-    backgroundColor: "blue",
+    padding: space.md,
+    backgroundColor: colors.bg.primary,
   },
 });

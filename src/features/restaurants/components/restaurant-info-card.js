@@ -1,7 +1,10 @@
+import { Lato_400Regular } from "@expo-google-fonts/lato";
 import { rest } from "lodash";
 import React from "react";
 import { Text, StyleSheet } from "react-native";
 import { Avatar, Button, Card, Title, Paragraph } from "react-native-paper";
+import { colors } from "../../../infrastructure/theme/colors";
+import { space } from "../../../infrastructure/theme/spacing";
 
 export const RestaurantInfoCard = ({ restaurant = {} }) => {
   const {
@@ -31,13 +34,14 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: "white",
+    backgroundColor: colors.bg.secondary,
+    fontFamily: Lato_400Regular,
   },
   cover: {
-    padding: 20,
-    backgroundColor: "white",
+    padding: space.md,
+    backgroundColor: colors.bg.secondary,
   },
   title: {
-    padding: 16,
+    padding: space.md,
   },
 });

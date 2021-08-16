@@ -23,30 +23,41 @@ const RestaurantList = styled(FlatList).attrs({
   },
 })``;
 
+const Loading = styled(ActivityIndicator)`
+  margin-left: -25px;
+`;
+
+const LoadingContainer = styled.View`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+`;
+
 export const RestaurantsScreen = () => {
   const { isLoading, error, restaurants } = useContext(RestaurantsContext);
-  if (!isLoading) {
-    return (
-      <>
-        <SafeArea>
-          <SearchContainer>
-            <Searchbar placeholder="Pesquisar" />
-          </SearchContainer>
-          <RestaurantList
-            data={restaurants}
-            renderItem={({ item }) => (
-              <Spacer position="bottom" size="small">
-                <RestaurantInfoCard restaurant={item} />
-              </Spacer>
-            )}
-            keyExtractor={(item) => {
-              item.name;
-            }}
-          />
-        </SafeArea>
-      </>
-    );
-  } else {
-    return <ActivityIndicator animating={true} color={Colors.red800} />;
-  }
+  return (
+    <>
+      <SafeArea>
+        {isLoading && (
+          <LoadingContainer>
+            <Loading size={50} animating={true} color={Colors.blue300} />
+          </LoadingContainer>
+        )}
+        <SearchContainer>
+          <Searchbar placeholder="Pesquisar" />
+        </SearchContainer>
+        <RestaurantList
+          data={restaurants}
+          renderItem={({ item }) => (
+            <Spacer position="bottom" size="small">
+              <RestaurantInfoCard restaurant={item} />
+            </Spacer>
+          )}
+          keyExtractor={(item) => {
+            item.name;
+          }}
+        />
+      </SafeArea>
+    </>
+  );
 };

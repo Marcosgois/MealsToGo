@@ -1,4 +1,4 @@
-import styled from "styled-components/native";
+import styled from "styled-components";
 
 const defaultTextStyles = (theme) => `
   font-family: ${theme.fonts.body};
@@ -33,11 +33,11 @@ const label = (theme) => `
 `;
 
 const variants = {
-    body,
-    label,
-    caption,
-    error,
-    hint,
+  body,
+  label,
+  caption,
+  error,
+  hint,
 };
 
 export const Text = styled.Text`
@@ -46,5 +46,5 @@ export const Text = styled.Text`
 `;
 
 Text.defaultProps = {
-    variant: "body",
+  variant: "body",
 };

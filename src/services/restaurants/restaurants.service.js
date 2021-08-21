@@ -1,4 +1,3 @@
-import { camelize } from "prelude-ls";
 import { mocks, mockImages } from "./mock";
 
 export const restaurantsRequest = (location) => {

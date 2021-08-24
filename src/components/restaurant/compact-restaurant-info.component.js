@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components/native";
 import WebView from "react-native-webview";
-import { Platform } from "react-native";
+import { Platform, View } from "react-native";
 
 import { Text } from "../typography/text.component";
+//import { FavouritesContext } from "../../services/favourites/favourites.context";
+import { Favourite } from "../favourites/favourite.component";
 
 const CompactImage = styled.Image`
   border-radius: 10px;
@@ -30,6 +32,7 @@ export const CompactRestaurantInfo = ({ restaurant }) => {
 
   return (
     <Item>
+      <Favourite restaurant={restaurant} />
       <Image source={{ uri: restaurant.photos[0] }} />
       <Text center variant="caption" numberOfLines={3}>
         {restaurant.name}

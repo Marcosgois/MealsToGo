@@ -11,6 +11,7 @@ export const Navigation = () => {
 
   return (
     <NavigationContainer>
+      {/* {console.log("Is Authenticated? " + isAuthenticated)} */}
       {isAuthenticated ? <AppNavigator /> : <AccountNavigator />}
     </NavigationContainer>
   );

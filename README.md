@@ -69,6 +69,7 @@ Projeto protótipo construíto em React Native com o backend em NodeJS.
 
 frameworks/bibliotecas usadas para desenvolver o projeto.
 
+* [Expo](https://expo.dev/)
 * [React.js](https://reactjs.org/)
 * [Node.js](https://nodejs.org/)
 * [React Native](https://reactnative.dev/)

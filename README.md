@@ -7,19 +7,19 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">MealsToGo Template React Native</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Projeto para ser usado como template em vários outros projetos e ideias
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Marcosgois/MealsToGo"><strong>Explore a documentação »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/Marcosgois/MealsToGo">Veja a Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/Marcosgois/MealsToGo/issues">Reporte algum Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/Marcosgois/MealsToGo/issues">Peça uma feature nova</a>
   </p>
 </div>
 

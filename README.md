@@ -58,35 +58,24 @@
 ![MealsToGo Map](https://user-images.githubusercontent.com/12503871/150624155-dffedc1e-da9d-44ea-9ddb-391262c0c59d.png)
 ![MealsToGo Timeline](https://user-images.githubusercontent.com/12503871/150624160-ce760b2d-2319-4fe1-ba31-972ebdd55b09.png)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Projeto protótipo construíto em React Native com o backend em NodeJS.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">Voltar ao início</a>)</p>
 
 
 
-### Built With
+### Construído Com
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+frameworks/bibliotecas usadas para desenvolver o projeto.
 
-* [Next.js](https://nextjs.org/)
 * [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Node.js](https://nodejs.org/)
+* [React Native](https://reactnative.dev/)
+* [MongoDB](https://mongodb.com/)
+* [Mongoose](https://mongoosejs.com/)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">Voltar ao início</a>)</p>
 
 
 

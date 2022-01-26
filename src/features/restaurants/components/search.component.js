@@ -15,6 +15,8 @@ export const Search = () => {
   return (
     <SearchContainer>
       <Searchbar
+        icon="heart"
+        onIconPress={() => null}
         placeholder="Pesquisar Restaurantes"
         value={searchKeyword}
         onSubmitEditing={() => {

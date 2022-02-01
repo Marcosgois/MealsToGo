@@ -12,6 +12,7 @@ import { FavouritesContext } from "../../../services/favourites/favourites.conte
 
 import { Search } from "../components/search.component";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
+import { FadeInView } from "../../../components/animations/fade.animation";
 
 const RestaurantList = styled(FlatList).attrs({
   contentContainerStyle: {
@@ -64,7 +65,9 @@ export const RestaurantsScreen = ({ navigation }) => {
                 }
               >
                 <Spacer position="bottom" size="large">
-                  <RestaurantInfoCard restaurant={item} />
+                  <FadeInView duration={1250}>
+                    <RestaurantInfoCard restaurant={item} />
+                  </FadeInView>
                 </Spacer>
               </TouchableOpacity>
             );

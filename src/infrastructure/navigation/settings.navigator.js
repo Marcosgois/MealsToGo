@@ -2,6 +2,7 @@ import React from "react";
 import { SettingsScreen } from "../../features/settings/screens/settings.screen";
 import { FavouritesScreen } from "../../features/settings/screens/favourites.screen";
 import { ProfileScreen } from "../../features/settings/screens/profile.screen";
+import { CameraScreen } from "../../features/settings/screens/camera.screen";
 
 import {
     createStackNavigator,
@@ -27,16 +28,22 @@ export const SettingsNavigator = ({ route, navigation }) => {
             />
             <SettingsStack.Screen
                 options={{
-                    header: () => null,
+                    //header: () => null,
                 }}
                 name="Favourites"
                 component={FavouritesScreen} />
             <SettingsStack.Screen
                 options={{
-                    header: () => null,
+                    //header: () => null,
                 }}
                 name="Profile"
                 component={ProfileScreen} />
+            <SettingsStack.Screen
+                options={{
+                    //header: () => null,
+                }}
+                name="Camera"
+                component={CameraScreen} />
         </SettingsStack.Navigator>
     );
 }

@@ -8,7 +8,7 @@ import { Spacer } from " ../../../components/spacer/spacer.component";
 import { SafeArea } from " ../../../components/utility/safe-area.component";
 import { AuthenticationContext } from "../../../services/authentication/authentication.context";
 
-const SettingsItem = styled(List.Item)`
+const ProfileItem = styled(List.Item)`
     padding: ${props => props.theme.space[3]}
 `;
 
@@ -16,33 +16,33 @@ const AvatarContainer = styled.View`
     align-items: center;
 `;
 
-export const SettingsScreen = ({ navigation }) => {
+export const ProfileScreen = ({ navigation }) => {
     const { onLogout, user } = useContext(AuthenticationContext);
     return (
         <SafeArea>
             <AvatarContainer>
                 <Avatar.Icon size={180} icon="human" backgroundColor="#2182BD" />
                 <Spacer position="top" size="large">
-                    <Text variant="caption">{user.email}</Text>
+                    <Text variant="caption">Imagem Perfil</Text>
                 </Spacer>
             </AvatarContainer>
             <List.Section>
-                <SettingsItem
-                    title="Perfil"
-                    description="Edite seu perfil"
+                <ProfileItem
+                    title={user.email}
+                    description="Email"
                     left={(props) => <List.Icon {...props} color="black" icon="account" />}
-                    onPress={() => navigation.navigate("Profile")}
+                    onPress={() => null}
                 />
-                <SettingsItem
-                    title="Favoritos"
-                    description="Seus favoritos"
-                    left={(props) => <List.Icon {...props} color="black" icon="heart" />}
-                    onPress={() => navigation.navigate("Favourites")}
+                <ProfileItem
+                    title={user.nome}
+                    description="Nome"
+                    left={(props) => <List.Icon {...props} color="black" icon="book" />}
+                    onPress={() => null}
                 />
-                <SettingsItem
+                <ProfileItem
                     title="Logout"
                     left={(props) => <List.Icon {...props} color="black" icon="door" />}
-                    onPress={onLogout}
+                    onPress={() => null}
                 />
             </List.Section>
         </SafeArea>
